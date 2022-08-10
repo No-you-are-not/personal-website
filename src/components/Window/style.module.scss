@@ -1,0 +1,21 @@
+.container {
+  width: 70%;
+  height: 0;
+  overflow: hidden;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  box-shadow: 15px 15px transparent;
+  transition: height 0.4s ease-in, box-shadow 0.4s ease-in, border 0.4s ease-in;
+}
+
+.open {
+  height: 600px;
+  transition: height 0.4s ease-in, box-shadow 0.4s ease-in, border 0.4s ease-in;
+  box-shadow: 15px 15px var(--green-dark);
+  border: 2px solid var(--green);
+}

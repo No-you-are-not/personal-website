@@ -1,0 +1,19 @@
+.container {
+  background-color: var(--blue);
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.second {
+  background-color: var(--pink);
+}
+
+.third {
+  background-color: var(--yellow);
+}

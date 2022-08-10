@@ -1,0 +1,101 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "jest": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:prettier/recommended",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
+  "rules": {
+    "no-tabs": 0,
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1,
+        "VariableDeclarator": 1,
+        "outerIIFEBody": 1,
+        "FunctionDeclaration": {
+          "parameters": 1,
+          "body": 1
+        },
+        "FunctionExpression": {
+          "parameters": 1,
+          "body": 1
+        }
+      }
+    ],
+    "linebreak-style": ["error", "unix"],
+    "semi": ["error", "always"],
+    "no-empty-pattern": 0,
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off"
+  },
+  "overrides": [
+    {
+      // enable the rule specifically for TypeScript files
+      "parser": "@typescript-eslint/parser",
+      "files": ["*.ts", "*.tsx"],
+      "extends": ["plugin:react-hooks/recommended", "plugin:@typescript-eslint/recommended"],
+      "rules": {
+        "camelcase": "off",
+        "react/display-name": "off",
+        "@typescript-eslint/camelcase": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/no-explicit-any": 0,
+        "@typescript-eslint/no-inferrable-types": [
+          "warn",
+          {
+            "ignoreParameters": true
+          }
+        ],
+        "@typescript-eslint/no-unused-vars": [
+          "warn",
+          {
+            "argsIgnorePattern": "^_",
+            "varsIgnorePattern": "^_",
+            "caughtErrorsIgnorePattern": "^_"
+          }
+        ],
+        "@typescript-eslint/no-use-before-define": ["error"],
+        "@typescript-eslint/no-var-requires": ["error"],
+        "@typescript-eslint/quotes": ["error", "single", { "avoidEscape": true }],
+        "import/prefer-default-export": "off",
+        "no-undef": "off",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn"
+      }
+    },
+    {
+      "files": ["**/*.stories.*"],
+      "rules": {
+        "import/no-anonymous-default-export": "off"
+      }
+    },
+    {
+      "files": ["*.spec.js", "*.spec.ts"],
+      "rules": { "global-require": "off" }
+    }
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
