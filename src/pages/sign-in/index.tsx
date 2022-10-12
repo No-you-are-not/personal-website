@@ -10,10 +10,10 @@ const SignInPage = () => {
       <div className={classes.container__form}>
         <div className={classes.inner}>
           <div className={classes.container__form__label}>
-            <label htmlFor={'email'}>Email:</label>
+            <label htmlFor={'email'}>Username:</label>
           </div>
           <div className={classes.container__form__input}>
-            <input placeholder={'email@finance.buddy'} id="email" />
+            <input id="email" />
           </div>
         </div>
         <div>
