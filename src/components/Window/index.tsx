@@ -23,6 +23,7 @@ export const Window: FC<IWindow> = ({ isOpen, setOpen, tabs }) => {
       />
       {tabs.map((el) => (
         <Body
+          page={el.post}
           key={el.id}
           isVisible={activeTab === el.id}
           id={el.id}

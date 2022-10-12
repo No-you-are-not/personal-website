@@ -1,0 +1,23 @@
+.container {
+  &__row {
+    width: 100%;
+    display: flex;
+    &__img {
+      text-align: center;
+      width: 50%;
+      padding: 20px;
+      img {
+        height: 100%;
+        border-radius: 14px;
+      }
+    }
+    &__text {
+      display: flex;
+      align-items: center;
+      width: 50%;
+      padding: 20px;
+      color: white;
+      font-size: 30px;
+    }
+  }
+}

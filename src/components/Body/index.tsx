@@ -18,8 +18,16 @@ export const Body: FC<IBody> = ({ id, label, page, isVisible }) => {
         [classes.third]: id === 3
       })}
     >
-      <div className={classes.container__title}>{label}</div>
-      <div className={classes.container__body}> {page}</div>
+      <div
+        className={classNames(classes.container__title, {
+          [classes.image_1]: id === 1,
+          [classes.image_2]: id === 2,
+          [classes.image_3]: id === 3
+        })}
+      >
+        {label}
+      </div>
+      <div className={classes.container__main}>{page}</div>
     </div>
   );
 };

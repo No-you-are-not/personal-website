@@ -4,6 +4,20 @@
   height: 100%;
   margin: auto;
   display: none;
+  overflow: auto ;
+
+  &__title {
+    padding: 20px;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid var(--green-light);
+  }
+  &__main {
+    overscroll-behavior: contain;
+    overflow: scroll;
+    height: 720px;
+  }
 }
 
 .visible {
@@ -16,4 +30,16 @@
 
 .third {
   background-color: var(--yellow);
+}
+
+.image_1 {
+  background-image: url("./cute_back_4.gif");
+}
+
+.image_2 {
+  background-image: url("./cute_back_6.gif");
+}
+
+.image_3 {
+  background-image: url("./cute_back_1.webp");
 }
