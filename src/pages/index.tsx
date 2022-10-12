@@ -21,5 +21,10 @@ export const ROUTES: ROUTE_ITEM[] = [
     id: 3,
     path: '/sign-up',
     component: lazy(() => import('./sign-up'))
+  },
+  {
+    id: 3,
+    path: '/test',
+    component: lazy(() => import('./main'))
   }
 ];
