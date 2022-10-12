@@ -3,14 +3,14 @@ import { Window } from '../../components/Window';
 
 import classes from './style.module.scss';
 import { IFolderData } from '../../interfaces/data';
-import { EducationPage } from '../EducationPage';
-import { InterestsPage } from '../InterestsPage';
-import { JourneyPage } from '../JourneyPage';
-import { SelfAnalysisPage } from '../SelfAnalysisPage';
-import { ExperiencePage } from '../ExperiencePage';
-import { ProjectsPage } from '../ProjectsPage';
-import { HobbiesPage } from '../HobbiesPage';
-import { SocialsPage } from '../SocialsPage';
+import { EducationPage } from '../subpages/EducationPage';
+import { InterestsPage } from '../subpages/InterestsPage';
+import { JourneyPage } from '../subpages/JourneyPage';
+import { SelfAnalysisPage } from '../subpages/SelfAnalysisPage';
+import { ExperiencePage } from '../subpages/ExperiencePage';
+import { ProjectsPage } from '../subpages/ProjectsPage';
+import { HobbiesPage } from '../subpages/HobbiesPage';
+import { SocialsPage } from '../subpages/SocialsPage';
 
 const folderData: IFolderData[] = [
   {

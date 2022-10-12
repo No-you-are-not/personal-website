@@ -1,5 +1,5 @@
 import classes from './style.module.scss';
-import { Text } from '../../components/Text';
+import { Text } from '../../../components/Text';
 
 export const InterestsPage = () => {
   return (
